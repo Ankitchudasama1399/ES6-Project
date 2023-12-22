@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowercase to Highercase</title>
+</head>
+<body>
+    
+</body>
+<script>
+const charToLower = (char) => {
+  return char.toLowerCase();
+};
+
+const arrayToLower = (arr) => {
+  return arr.map((word) => {
+    return word.split('').map(charToLower).join('');
+  });
+};
+
+const inputArray = ["MA", "SA", "I", "SCH", "OOL"];
+
+const outputArray = arrayToLower(inputArray);
+
+console.log(outputArray);
+
+</script>
+</html>
